@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	
+	<link href="https://fonts.googleapis.com/css?family=Old+Standard+TT&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="menu.css" type="text/css" />
+	<link rel="stylesheet" href="wycena.css" type="text/css" />
+	<link rel="stylesheet" href="css/fontello.css" type="text/css" />
+	
+    <script type="text/javascript" src="jquery.min.js"></script>
+	<script src="script.js"></script>
+	<script src="wycena.js"></script>
+	<title>Wycena</title>
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+</head>
+<body>
+	
+	<div class="klasaDoCzcionki">
+		<div class="wyslanoAnimacja"><div class="wyslanoBox">Wyslano</div></div>
+	<div class="klasaDoCzcionki">
+		<div class="rozjasnianieWejscie"><div class="loadingLogo">Wycena</div></div>
+	<div class="zadajPytanieContainer">
+		<div class="zamknijIkonaZadajPytanie" onclick="wysunFormularz()"><i class="icon-cancel-1"></i></div>
+		<form class="gform" method="POST" data-email="esticaemail@gmail.com" onsubmit="wysunFormularz(); showWyslano()" 
+				action="https://script.google.com/macros/s/AKfycbxrarB8nNEVvmvqRP3L5s8kaYegeV0jofh3X17LPmqbqS9ENF-ToGXIFL3HO_E7DwEbgg/exec">
+			
+			
+			
+			  <label class="zadajPytanieTekst" for="fname" >Imie i Nazwisko*</label>
+					<input type="text" id="fname" name="Imie" required></input>
+					
+					<label class="zadajPytanieTekst" for="telefon">Telefon kontaktowy</label>
+					<input type="text" id="sname" name="telefon"></input>
+					
+					<label class="zadajPytanieTekst" for="Subject" >Adres e-mail*</label>
+					<input type="email" id="temat" name="E-mail" required></input>
+					
+					<label class="zadajPytanieTekst" for="Tresc" >Wiadomość*</label>
+					<textarea name="Tresc" required></textarea>
+					
+			<div class="form-elements">		
+					<div class="przyciskRamka"><input class="wyslij_pytanie_przycisk" type="submit" value="ZADAJ PYTANIE"></div>
+
+			</div>
+
+			<!-- Customise the Thankyou Message People See when they submit the form: -->
+			<div class="thankyou_message" style="display:none;">
+			  <div class="przyciskRamka"><input type="submit" value="WYSŁANO"></div>
+			</div>
+		</form>
+		
+		
+	</div>
+	
+	<div class="menuContainer">
+		<ul class="menu">
+			<li><a href="index.html" >
+				<div class="logoContainer">
+					<div class="logoMiddle">
+						<image src="logoPicture.png" class="logo"/>
+						<div class="logoTexts">
+							<div class="logoFont">Estica</div>
+							<div class="logoSmallText">Najwyższa  jakość</div></a>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li ><a href="index.html">Firma</a>
+				
+			</li>
+			<li><a href="galeria.html">Galeria</a>
+				<ol>
+					  <li>
+						<a href="schody_samonosne.html">
+							<div class="galeryBackground" style="background-image: url(index_zdjecie_2_1.jpg); 
+							background-position: 50% 85%;"></div>
+							<div class="galeryBlackFilter" ></div>
+							<span style="left: 12.5%;"><span >SCHODY SAMONOŚNE</span></span>
+						</a>						
+					  </li>
+					  <li>
+						<a href="schody_na_betonie.html">
+							<div class="galeryBackground" style="background-image: url(img.jpg);"></div>
+							<div class="galeryBlackFilter" ></div>
+							<span style="left: 37.5%;"><span>SCHODY NA BETONIE</span></span>
+						</a>						
+					  </li>
+					  <li>
+						<a href="meble.html">
+							<div class="galeryBackground" style="background-image: url(index_zdjecia_3_3.jpg);"></div>
+							<div class="galeryBlackFilter"></div>
+							<span style="left: 62.5%;"><span>MEBLE</span></span>
+						</a>						
+					  </li>
+					  <li>
+						<a href="inne.html">
+							<div class="galeryBackground" style="background-image: url(inne.jpg);"></div>
+							<div class="galeryBlackFilter"></div>
+							<span style="left: 87.5%;"><span>INNE</span></span>
+						</a>						
+					  </li>
+				</ol>
+			</li>
+			<li style="background-color: #292421; position: relative;" ><a style="color:#baa256;" href="wycena.html">Wycena</a>
+				<div style="position: absolute; width: 100%; height: 7px; background-color: #baa256; top: 0;"></div>
+			</li>
+			<li><a href="kontakt.html">Kontakt</a></li>
+			<li><a href="#" onclick="wysunFormularz()"><span style="width: 90%;">Zadaj pytanie</span></a></li>
+		</ul>
+	</div>
+	
+	<div class="websiteContainer">
+		<div class="scrollContainer">
+		
+			<div class="wycenaZdjecie">
+				<div class="wycenaZdejcieNapis">Wycena</div>
+			</div>
+			<div class="poczatkoweInformacje">	
+				Szanowny kliencie. Prosimy o szczegółowe wypełnienie poniższego formularza. Informacje, które Państwo podacie są niezbędne do wykonania szacunkowego kosztorysu i nie obligują Państwa do zamówienia schodów w naszej firmie. W razie pytań prosimy o kontakt. Odpowiemy na wszystkie pytania.
+			</div>
+			<div class="nazwaKategorii"><div class="ciemneTlo"></div><div class="kategoriaNapis">PRZEDMIOT WYCENY</div></div>
+			<div class="formularzWycenaContainer">
+			<div class="miejsceNaWybor">
+				<fieldset id="rodzaj_schodow">
+				<div class="column3Center">
+					<div class="row"> 
+					  <div class="column3">
+						<label for="rodzaj_schodow_1" onclick="wysunFormularzWyceny('wycenaSamonosne')">
+							<input type="radio" value="value1" name="rodzaj_schodow" id="rodzaj_schodow_1" required>
+							<img src="img.jpg" style="width:100%;">
+							<div class="radioLabel">Schody samonośne</div>
+						</label>
+					  </div>
+					  <div class="column3">
+						<label for="rodzaj_schodow_2" onclick="wysunFormularzWyceny('wycenaSchodyNaBeton')">
+							<input type="radio" value="value1" name="rodzaj_schodow" id="rodzaj_schodow_2" required>
+							<img src="img.jpg" style="width:100%;">
+							<div class="radioLabel">Schody na beton</div>
+						</label>
+					  </div>
+					  <div class="column3">
+						
+							<label for="rodzaj_schodow_3" onclick="wysunFormularzWyceny('wycenaInne')">
+								<input type="radio" value="value1" name="rodzaj_schodow" id="rodzaj_schodow_3" required>
+								<img src="index_zdjecia_3_3.jpg" style="width:100%;">
+								<div class="radioLabel">Inne</div>
+							</label>
+						
+						
+					  </div>
+					</div>
+				</div>
+				</fieldset>
+			</div>
+			</div>
+			
+			<!-- ------------------------------------------SCHODY NA BETON FORMULARZ------------------------------------ -->
+			<div class="formularzWycenaContainer wycenaSchodyNaBeton">
+				<form class="gform" method="POST" data-email="esticaemail@gmail.com" onsubmit="showWyslano()" 
+				action="https://script.google.com/macros/s/AKfycbxXUnYfYo4Az5INt_YmdgWeEG_all4WYOgOgzlaa64EjkEC4fXbiT7eSKOS--AxTkAEzQ/exec">
+					  
+					  <div class="nazwaKategorii"><div class="ciemneTlo"></div><div class="kategoriaNapis">GATUNEK DREWNA</div></div>
+					  <div class="miejsceNaWybor">
+						<fieldset id="material">
+							<div class="radioCenter">
+								<div class="row"> 
+								  <div class="column">
+									<label for="dab">
+										<input type="radio" value="dab" name="material" id="dab" required>
+										<img src="index_zdjecia_3_3.jpg" style="width:100%;">
+										<div class="radioLabel">Dąb</div>
+									</label>
+								  </div>
+								  <div class="column">
+									<label for="jesion">
+										<input type="radio" value="jesion" name="material" id="jesion" required>
+										<img src="index_zdjecia_3_3.jpg" style="width:100%;">
+										<div class="radioLabel">Jesion</div>
+									</label>
+								  </div>
+								  <div class="column">
+									<label for="buk">
+										<input type="radio" value="buk" name="material" id="buk" required>
+										<img src="index_zdjecia_3_3.jpg" style="width:100%;">
+										<div class="radioLabel">Buk</div>
+									</label>
+								  </div>
+								  <div class="column">
+									<label for="inny_material">
+										<input type="radio" value="inny_material" name="material" id="inny_material" required>
+										
+										<img src="index_zdjecia_3_3.jpg" style="width:100%;">
+										
+									
+										<div class="radioLabel">Inny</div>
+									</label>
+									
+									<div class="inneDivForInput" onclick="inneRadioChecked('inny_material')">
+										<input class="inputInne" type="text" id="inny_material_nazwa" name="inny_material_nazwa"></input>
+									</div>
+								  </div>
+								</div>
+							</div>	
+						</fieldset>
+					  </div>
+					  
+					  <div class="nazwaKategorii"><div class="ciemneTlo"></div><div class="kategoriaNapis">INFORMACJE</div></div>
+					  <div class="miejsceNaWybor">
+						<fieldset id="informacjeBeton" style="padding-top: 25px;">
+							<div class="informacjeBetonContainer">
+								<table style="width: 50vw; width: calc(45vw+200px);">
+								  <tr>
+									<th>Opis</th>
+									<th>Wymiar</th>
+								  </tr>
+								  <tr>
+									<td>szerokość biegu (wymiar od ściany do krawędzi stopnia)</td>
+									<td><input type="text" id="szerokosc_biegu" name="szerokosc_biegu" required><span class="jednostkaInput">cm</span></td>
+								  </tr>
+								  <tr>
+									<td>ilość stopni prostych (uwzględniając stopień na poziomie górnej podłogi)</td>
+									<td><input type="text" id="ilość_stopni_prostych" name="ilość_stopni_prostych" required><span class="jednostkaInput">cm</span></td>
+								  </tr>
+								  <tr>
+									<td>ilość stopni zabiegowych (trójkątnych/trapezowych) jeśli występują</td>
+									<td><input type="text" id="ilość_stopni_zabiegowych" name="ilość_stopni_zabiegowych"><span class="jednostkaInput">cm</span></td>
+								  </tr>
+								  <tr>
+									<td>wymiary spornika (podestu) jeśli występuje</td>
+									<td>
+										<input type="text" id="wymiary_spornika_dlugosc" name="wymiary_spornika_dlugosc" class="input2Wymiary"><span class="jednostkaInput">x</span>
+										<input type="text" id="wymiary_spornika_szerokosc" name="wymiary_spornika_szerokosc" class="input2Wymiary"><span class="jednostkaInput">cm</span>
+									</td>
+								  </tr>
+								</table>
+							</div>
+						</fieldset>
+						
+						<fieldset id="Informacje2Beton" style="padding-top: 25px; padding-bottom: 20px;">
+							<div class="informacjeBetonContainer">
+								<table style="width: 50vw; width: calc(42vw+200px);">
+								  <tr>
+									<th colspan="2">Kolor</th>
+								  </tr>
+								  <fieldset id="kolor">
+									  <tr class="radioTable">
+										<td style="width: 50%;">
+											<label for="naturalny" style="cursor: pointer; width: 100%;">
+												<input class="inputRadioTable" type="radio" value="naturalny" name="kolor" id="naturalny" required>
+												<span>naturalny</span>
+											</label>
+										</td>
+										<td style="width: 50%;">
+											<label for="barwiony" style="cursor: pointer; width: 100%;">
+												<input class="inputRadioTable" type="radio" value="barwiony" name="kolor" id="barwiony" required>
+												<span>barwiony</span>
+											</label>
+										</td>
+									  </tr>
+								  </fieldset>
+								</table>
+								<table style="width: 50vw; width: calc(45vw+200px);">
+								  <tr>
+									<th colspan="3">Wykończenie</th>
+								  </tr>
+								  <fieldset id="wykonczenie">
+									  <tr class="radioTable">
+										<td style="width: 33.33%;">
+											<label for="lakier" style="cursor: pointer; width: 100%;">
+												<input class="inputRadioTable" type="radio" value="lakier" name="wykonczenie" id="lakier" required>
+												<span>lakier</span>
+											</label>
+										</td>
+										<td style="width: 33.33%;">
+											<label for="olej" style="cursor: pointer; width: 100%;">
+												<input class="inputRadioTable" type="radio" value="olej" name="wykonczenie" id="olej" required>
+												<span>olej</span>
+											</label>
+										</td>
+										<td style="width: 33.33%;">
+											<label for="inne_wykonczenie" style="cursor: pointer; width: 100%;">
+												<input class="inputRadioTable" type="radio" value="inne_wykonczenie" name="wykonczenie" id="inne_wykonczenie" required>
+												<span>inne</span>
+											</label>
+											<div class="inneInputDivContainer" onclick="inneRadioChecked('inne_wykonczenie')">
+												<input class="inputInne" type="text" id="inne_wykonczenie_nazwa" name="inne_wykonczenie_nazwa"></input>
+											</div>
+										</td>
+									  </tr>
+								  </fieldset>
+								</table>
+								
+							</div>
+						</fieldset>
+					  </div>
+					  
+					  <div class="nazwaKategorii"><div class="ciemneTlo"></div><div class="kategoriaNapis">BALUSTRADA</div></div>
+					  <div class="miejsceNaWybor">
+						<fieldset id="balustrada" style="padding-top: 25px; padding-bottom: 20px;">
+							<div class="informacjeBetonContainer">
+								<table style="width: 50vw; width: calc(42vw+200px);">
+								  <tr>
+									<th colspan="2">Balustrada</th>
+								  </tr>
+								  <fieldset id="balustrada_tak_nie">
+									  <tr class="radioTable">
+										<td style="width: 50%;">
+											<label for="balustrada_tak" style="cursor: pointer; width: 100%;" onclick="showBalustradaDiv()">
+												<input class="inputRadioTable" type="radio" value="balustrada_tak" name="balustrada_tak_nie" id="balustrada_tak" required>
+												<span>tak</span>
+											</label>
+										</td>
+										<td style="width: 50%;">
+											<label for="balustrada_nie" style="cursor: pointer; width: 100%;" onclick="hideBalustradaDiv()">
+												<input class="inputRadioTable" type="radio" value="balustrada_nie" name="balustrada_tak_nie" id="balustrada_nie" required>
+												<span>nie</span>
+											</label>
+										</td>
+									  </tr>
+								  </fieldset>
+								</table>
+								<div class="hideElement" id="balustradaDiv">
+									<table style="width: 50vw; width: calc(45vw+200px); margin-top: 25px;">
+								  <tr>
+									<th colspan="3">Rodzaj balustrady</th>
+								  </tr>
+								  <fieldset id="Rodzaj balustrady">
+									  <tr class="radioTable">
+										<td style="width: 33.33%;">
+											<label for="drewniana_balustrada" style="cursor: pointer; width: 100%;">
+												<input class="inputRadioTable" type="radio" value="drewniana_balustrada" name="rodzaj_balustrady" id="drewniana_balustrada">
+												<span>drewniana</span>
+											</label>
+										</td>
+										<td style="width: 33.33%;">
+											<label for="szklana_balustrada" style="cursor: pointer; width: 100%;">
+												<input class="inputRadioTable" type="radio" value="szklana_balustrada" name="rodzaj_balustrady" id="szklana_balustrada">
+												<span>szklana balustrada</span>
+											</label>
+										</td>
+										<td style="width: 33.33%;">
+											<label for="ze_stali_nierdzewnej_balustrada" style="cursor: pointer; width: 100%;">
+												<input class="inputRadioTable" type="radio" value="ze_stali_nierdzewnej_balustrada" name="rodzaj_balustrady" id="ze_stali_nierdzewnej_balustrada">
+												<span>ze stali nierdzewnej</span>
+											</label>
+										</td>
+										
+									  </tr>
+									  
+									  <tr class="radioTable">
+										<td style="width: 33.33%;">
+											<label for="stalowa_malowana_balustrada" style="cursor: pointer; width: 100%;">
+												<input class="inputRadioTable" type="radio" value="stalowa_malowana_balustrada" name="rodzaj_balustrady" id="stalowa_malowana_balustrada">
+												<span>stalowa malowana</span>
+											</label>
+										</td>
+										<td style="width: 33.33%;">
+											<label for="metaloplastyka_balustrada" style="cursor: pointer; width: 100%;">
+												<input class="inputRadioTable" type="radio" value="metaloplastyka_balustrada" name="rodzaj_balustrady" id="metaloplastyka_balustrada">
+												<span>metaloplastyka</span>
+											</label>
+										</td>
+										<td style="width: 33.33%;">
+											<label for="inne_balustrada" style="cursor: pointer; width: 100%;">
+												<input class="inputRadioTable" type="radio" value="inne_balustrada" name="rodzaj_balustrady" id="inne_balustrada">
+												<span>inna</span>
+											</label>
+											<div class="inneInputDivContainer" onclick="inneRadioChecked('inne_balustrada')">
+												<input class="inputInne" type="text" id="inne_balustrada_nazwa" name="inne_balustrada_nazwa"></input>
+											</div>
+										</td>
+									  </tr>
+								  </fieldset>
+								</table>
+								<table style="width: 50vw; width: calc(42vw+200px); margin-top: 25px;">
+								  <tr>
+									<th>Opis</th>
+									<th>Wymiar</th>
+								  </tr>
+								  <tr>
+									<td>łączna ilość balustrady wzdłuż biegów schodów i balustrady na pietrze</td>
+									<td>
+										<input type="text" id="laczna_ilosc_balustrad" name="laczna_ilosc_balustrad"><span class="jednostkaInput">cm</span>
+									</td>
+								  </tr>
+								</table>
+								</div>
+								
+							</div>
+						</fieldset>
+					  </div>
+					  
+ 			
+					  <div class="nazwaKategorii"><div class="ciemneTlo"></div><div class="kategoriaNapis">FORMULARZ KONTAKTOWY</div></div>
+					  <div class="miejsceNaWybor">
+					 <fieldset id="group3"> 
+					<div class="wycenaFormularzContainer">
+						<div class="wycenaFormularzDane">
+							<div class="wycenaFormularzDoPrawej">
+								<label class="zadajPytanieTekst" for="fname" >Imie i Nazwisko*</label>
+								<input type="text" id="fname" name="Imie" required></input>
+							</div>
+							<div class="wycenaFormularzDoPrawej">
+								<label class="zadajPytanieTekst" for="telefon">Telefon kontaktowy</label>
+								<input type="text" id="sname" name="telefon"></input>
+							</div>
+							<div class="wycenaFormularzDoPrawej">
+								<label class="zadajPytanieTekst" for="Subject" >Adres e-mail*</label>
+								<input type="email" id="temat" name="E-mail" required></input>
+							</div>
+							<div style="clear: both; display: none;"></div>
+						</div>
+						<div class="wycenaFormularzDoLewej">
+							<div class="wycenaFormularzKomentarz">
+								<label class="zadajPytanieTekst" for="Uwagi" >Uwagi</label>
+								<textarea name="Uwagi"></textarea>
+							</div>
+						</div>
+						<div style="clear: both; display: none;"></div>
+						<div style="clear: both; display: none;"></div>
+					</div>
+					</fieldset>
+					
+					  </div>
+					  <div class="przyciskRamka" style="margin-left: auto; margin-right: auto; margin-bottom: 25px; margin-top: 25px; "><input type="submit" style="cursor: pointer;" value="WYŚLIJ FORMULARZ"></div>
+				</form>
+			</div>
+			
+			<!-- --------------------------------------------------WYCENA SAMONOŚNE-------------------------------- -->
+			<div class="formularzWycenaContainer wycenaSamonosne">
+				<form class="gform" method="POST" data-email="esticaemail@gmail.com" onsubmit="showWyslano()" 
+				action="https://script.google.com/macros/s/AKfycbxXUnYfYo4Az5INt_YmdgWeEG_all4WYOgOgzlaa64EjkEC4fXbiT7eSKOS--AxTkAEzQ/exec">
+					  
+					  <div class="nazwaKategorii"><div class="ciemneTlo"></div><div class="kategoriaNapis">KSZTAŁT SCHHODÓW</div></div>
+					  <div class="miejsceNaWybor">
+						<fieldset id="ksztalt_schodow">
+							<div class="column3Center">
+								<div class="row"> 
+								  <div class="column3">
+									<label for="proste">
+										<input type="radio" value="proste" name="ksztalt_schodow" id="proste" required>
+										<img src="img.jpg" style="width:100%;">
+										<div class="radioLabel">Proste</div>
+									</label>
+								  </div>
+								  <div class="column3">
+									<label for="zabiegowe_U">
+										<input type="radio" value="zabiegowe_U" name="ksztalt_schodow" id="zabiegowe_U" required>
+										<img src="img.jpg" style="width:100%;">
+										<div class="radioLabel">Zabiegowe U</div>
+									</label>
+								  </div>
+								  <div class="column3">
+									<label for="ze_spornikiem">
+										<input type="radio" value="ze_spornikiem" name="ksztalt_schodow" id="ze_spornikiem" required>
+										<img src="index_zdjecia_3_3.jpg" style="width:100%;">
+										<div class="radioLabel">Ze spornikiem</div>
+									</label>
+								  </div>
+								</div>
+								<div class="row"> 
+								  <div class="column3">
+									<label for="zabiegowe_L">
+										<input type="radio" value="zabiegowe_L" name="ksztalt_schodow" id="zabiegowe_L" required>
+										<img src="img.jpg" style="width:100%;">
+										<div class="radioLabel">Zabiegowe L</div>
+									</label>
+								  </div>
+								  <div class="column3">
+									<label for="krete">
+										<input type="radio" value="krete" name="ksztalt_schodow" id="krete" required>
+										<img src="img.jpg" style="width:100%;">
+										<div class="radioLabel">Kręte</div>
+									</label>
+								  </div>
+								  <div class="column3">
+									<label for="giete">
+										<input type="radio" value="giete" name="ksztalt_schodow" id="giete" required>
+										<img src="index_zdjecia_3_3.jpg" style="width:100%;">
+										<div class="radioLabel">Gięte</div>
+									</label>
+								  </div>
+								</div>
+							</div>
+						</fieldset>
+					  </div>
+					  
+					  <div class="nazwaKategorii"><div class="ciemneTlo"></div><div class="kategoriaNapis">KSZTAŁT I WYMIAR OTOWRU STROPOWEGO</div></div>
+					  <div class="miejsceNaWybor">
+						<fieldset id="ksztalt_i_wymiar_otworu_stropowego">
+							<div class="column3Center">
+								<div class="row"> 
+								  <div class="column3">
+									<label for="otwor_prosty">
+										<input type="radio" value="otwor_prosty" name="ksztalt_i_wymiar_otworu_stropowego" id="otwor_prosty" required>
+										<img src="img.jpg" style="width:100%;">
+										
+										<div class="inputWymiaryABCContainer">
+											A - <input class="inputWymiaryABC" type="text" id="otwor_prosty_wymiar_A" name="otwor_prosty_wymiar_A"></input><span class="jednostkaInput">cm</span>
+										</div>
+										<div class="inputWymiaryABCContainer">
+											B - <input class="inputWymiaryABC" type="text" id="otwor_prosty_wymiar_B" name="otwor_prosty_wymiar_B"></input><span class="jednostkaInput">cm</span>
+										</div>	
+									</label>
+									
+								  </div>
+								  <div class="column3">
+									<label for="otwor_C">
+										<input type="radio" value="otwor_C" name="ksztalt_i_wymiar_otworu_stropowego" id="otwor_C" required>
+										<img src="img.jpg" style="width:100%;">
+										
+										<div class="inputWymiaryABCContainer">
+											A - <input class="inputWymiaryABC" type="text" id="otwor_C_wymiar_A" name="otwor_C_wymiar_A"></input><span class="jednostkaInput">cm</span>
+										</div>
+										<div class="inputWymiaryABCContainer">
+											B - <input class="inputWymiaryABC" type="text" id="otwor_C_wymiar_B" name="otwor_C_wymiar_B"></input><span class="jednostkaInput">cm</span>
+										</div>	
+										<div class="inputWymiaryABCContainer">
+											C - <input class="inputWymiaryABC" type="text" id="otwor_C_wymiar_C" name="otwor_C_wymiar_C"></input><span class="jednostkaInput">cm</span>
+										</div>
+									</label>
+								  </div>
+								  <div class="column3">
+									<label for="otwor_L">
+										<input type="radio" value="otwor_L" name="ksztalt_i_wymiar_otworu_stropowego" id="otwor_L" required>
+										<img src="img.jpg" style="width:100%;">
+										
+										<div class="inputWymiaryABCContainer">
+											A - <input class="inputWymiaryABC" type="text" id="otwor_L_wymiar_A" name="otwor_L_wymiar_A"></input><span class="jednostkaInput">cm</span>
+										</div>
+										<div class="inputWymiaryABCContainer">
+											B - <input class="inputWymiaryABC" type="text" id="otwor_L_wymiar_B" name="otwor_L_wymiar_B"></input><span class="jednostkaInput">cm</span>
+										</div>	
+										<div class="inputWymiaryABCContainer">
+											C - <input class="inputWymiaryABC" type="text" id="otwor_L_wymiar_C" name="otwor_L_wymiar_C"></input><span class="jednostkaInput">cm</span>
+										</div>
+									</label>
+								  </div>
+								</div>
+							</div>
+						</fieldset>
+					  </div>
+						
+					  <div class="nazwaKategorii"><div class="ciemneTlo"></div><div class="kategoriaNapis">INFORMACJE</div></div>
+					  <div class="miejsceNaWybor">
+						<fieldset id="informacjeSamonosne" style="padding-top: 25px;">
+							<div class="informacjeBetonContainer">
+								<table style="width: 50vw; width: calc(42vw+200px);">
+								  <tr>
+									<th>Opis</th>
+									<th>Wymiar</th>
+								  </tr>
+								  <tr>
+									<td>wysokość kondygnacji - wysokość od poziomu dolnej do poziomu górnej podłogi</td>
+									<td><input type="text" id="wysokosc_kondygnacji_samonosne" name="wysokosc_kondygnacji_samonosne" required><span class="jednostkaInput">cm</span></td>
+								  </tr>
+								</table>
+							</div>
+						</fieldset>
+						
+						<fieldset id="Informacje2Beton" style="padding-top: 25px; padding-bottom: 20px;">
+							<div class="informacjeBetonContainer">
+								<table style="width: 50vw; width: calc(42vw+200px);">
+								  <tr>
+									<th colspan="2">Rodzaj schodów</th>
+								  </tr>
+								  <fieldset id="rodzaj_schodow_samonosne">
+									  <tr class="radioTable">
+										<td style="width: 50%;">
+											<label for="azurowe" style="cursor: pointer; width: 100%;">
+												<input class="inputRadioTable" type="radio" value="azurowe" name="rodzaj_schodow_samonosne" id="azurowe" required>
+												<span>ażurowe (bez podstopnia)</span>
+											</label>
+										</td>
+										<td style="width: 50%;">
+											<label for="pelne" style="cursor: pointer; width: 100%;">
+												<input class="inputRadioTable" type="radio" value="pelne" name="rodzaj_schodow_samonosne" id="pelne" required>
+												<span>pełne (z podstopniem)</span>
+											</label>
+										</td>
+									  </tr>
+								  </fieldset>
+								</table>
+								
+							</div>
+						</fieldset>
+					  </div>
+						
+					  <div class="nazwaKategorii"><div class="ciemneTlo"></div><div class="kategoriaNapis">FORMULARZ KONTAKTOWY</div></div>
+					  <div class="miejsceNaWybor">
+					 <fieldset id="group3"> 
+					<div class="wycenaFormularzContainer">
+						<div class="wycenaFormularzDane">
+							<div class="wycenaFormularzDoPrawej">
+								<label class="zadajPytanieTekst" for="fname" >Imie i Nazwisko*</label>
+								<input type="text" id="fname" name="Imie" required></input>
+							</div>
+							<div class="wycenaFormularzDoPrawej">
+								<label class="zadajPytanieTekst" for="telefon">Telefon kontaktowy</label>
+								<input type="text" id="sname" name="telefon"></input>
+							</div>
+							<div class="wycenaFormularzDoPrawej">
+								<label class="zadajPytanieTekst" for="Subject" >Adres e-mail*</label>
+								<input type="email" id="temat" name="E-mail" required></input>
+							</div>
+							<div style="clear: both; display: none;"></div>
+						</div>
+						<div class="wycenaFormularzDoLewej">
+							<div class="wycenaFormularzKomentarz">
+								<label class="zadajPytanieTekst" for="Uwagi" >Uwagi</label>
+								<textarea name="Uwagi"></textarea>
+							</div>
+						</div>
+						<div style="clear: both; display: none;"></div>
+						<div style="clear: both; display: none;"></div>
+					</div>
+					</fieldset>
+					
+					  </div>
+					  <div class="przyciskRamka" style="margin-left: auto; margin-right: auto; margin-bottom: 25px; margin-top: 25px; "><input type="submit" style="cursor: pointer;" value="WYŚLIJ FORMULARZ"></div>
+				</form>
+			</div>
+			
+			<!-- --------------------------------------------------WYCENA INNE-------------------------------- -->
+			<div class="formularzWycenaContainer wycenaInne" >
+				<form class="gform" method="POST" data-email="esticaemail@gmail.com" onsubmit="showWyslano()" 
+				action="https://script.google.com/macros/s/AKfycbxXUnYfYo4Az5INt_YmdgWeEG_all4WYOgOgzlaa64EjkEC4fXbiT7eSKOS--AxTkAEzQ/exec">
+					  
+					  <div class="nazwaKategorii" ><div class="ciemneTlo"></div><div class="kategoriaNapis">OPIS REALIZACJI</div></div>
+					  <div class="miejsceNaWybor">
+					 <fieldset id="group3"> 
+					<div class="wycenaFormularzContainer" >
+						<div class="wycenaFormularzDane" >
+							<div class="wycenaFormularzDoPrawej">
+								<label class="zadajPytanieTekst" for="fname" >Imie i Nazwisko*</label>
+								<input type="text" id="fname" name="Imie" required></input>
+							</div>
+							<div class="wycenaFormularzDoPrawej">
+								<label class="zadajPytanieTekst" for="telefon">Telefon kontaktowy</label>
+								<input type="text" id="sname" name="telefon"></input>
+							</div>
+							<div class="wycenaFormularzDoPrawej">
+								<label class="zadajPytanieTekst" for="Subject" >Adres e-mail*</label>
+								<input type="email" id="temat" name="E-mail" required></input>
+							</div>
+							<div style="clear: both; display: none;"></div>
+						</div>
+						<div class="wycenaFormularzDoLewej">
+							<div class="wycenaFormularzKomentarz">
+								<label class="zadajPytanieTekst" for="Opis" >Opis*</label>
+								<textarea name="Opis" required></textarea>
+							</div>
+						</div>
+						<div style="clear: both; display: none;"></div>
+						<div style="clear: both; display: none;"></div>
+					</div>
+					</fieldset>
+					
+					  </div>
+					  <div id="wycenaInneMove" class="przyciskRamka" style="margin-left: auto; margin-right: auto; margin-bottom: 25px; margin-top: 25px; "><input type="submit" style="cursor: pointer;" value="WYŚLIJ FORMULARZ"></div>
+				</form>
+			</div>
+			
+			
+		</div>
+	</div>
+				
+				
+				
+				
+	
+		
+		
+	
+	<script data-cfasync="false" type="text/javascript" src="form-submission-handler.js"></script>
+	
+	
+</body>
+</html>

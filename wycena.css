@@ -1,0 +1,748 @@
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+@media screen and (min-width:1201px) {
+/* [type=radio] + img {
+    width: 20vw!important;
+  } */
+ .radioCenter
+{
+	width: 90vw!important;
+}
+.column3Center
+{
+	width: 90vw!important;
+}
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 1200px) and  (min-width:1001px){
+/* [type=radio] + img {
+    width: 20vw!important;
+  }
+   */
+   .radioCenter
+{
+	width: 90vw!important;
+}
+.column3Center
+{
+	width: 90vw!important;
+}
+} 
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 1000px) and  (min-width:601px){
+/* [type=radio] + img {
+    width: 35vw!important;
+  } */
+  
+.radioCenter
+{
+	width: 70vw!important;
+}
+.column3Center
+{
+	width: 90vw!important;
+}
+
+.wycenaFormularzContainer input[type=text] {
+	width: 346px;
+}
+
+.wycenaFormularzContainer input[type=email] {
+	width: 346px;
+}
+
+.wycenaFormularzContainer textarea {
+	width: 346px;
+}
+
+.wycenaFormularzDane
+{
+	float: none !important;
+	width: 100% !important;
+}
+
+.wycenaFormularzKomentarz
+{
+	float: none !important;
+	width: 100% !important;
+}
+.wycenaFormularzDoPrawej
+{
+	float: none !important;
+}
+
+.wycenaFormularzDoLewej
+{
+	float: none !important;
+}
+
+.wycenaFormularzDane label
+{
+	text-align: center !important;
+}
+.wycenaFormularzKomentarz label
+{
+	text-align: center !important;
+}
+.wycenaFormularzContainer label
+{
+	margin-left: 0px !important;
+	
+}
+}
+
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+@media screen and (max-width:600px) {
+/* [type=radio] + img {
+    width: 60vw!important;
+  } */
+  
+.radioCenter
+{
+	width: 60vw!important;
+}
+.column3Center
+{
+	width: 60vw!important;
+}
+  
+.wycenaFormularzContainer input[type=text] {
+	width: 346px;
+}
+
+.wycenaFormularzContainer input[type=email] {
+	width: 346px;
+}
+
+.wycenaFormularzContainer textarea {
+	width: 346px;
+}
+
+.wycenaFormularzDane
+{
+	float: none !important;
+	width: 100% !important;
+}
+
+.wycenaFormularzKomentarz
+{
+	float: none !important;
+	width: 100% !important;
+}
+.wycenaFormularzDoPrawej
+{
+	float: none !important;
+}
+
+.wycenaFormularzDoLewej
+{
+	float: none !important;
+}
+
+.wycenaFormularzDane label
+{
+	text-align: center !important;
+}
+.wycenaFormularzKomentarz label
+{
+	text-align: center !important;
+}
+.wycenaFormularzContainer label
+{
+	margin-left: 0px !important;
+	
+}
+}
+
+/*---------------------------------------------------------------------------------------------*/
+
+.row {
+	box-sizing: border-box;
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  /* padding: 0 4px; */
+  
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  /* padding: 0 4px; */
+  padding-left: 18px;
+  padding-right: 18px;
+  box-sizing: border-box;
+}
+
+.column img {
+  /* margin-top: 8px; */
+  vertical-align: middle;
+  width: 100%;
+}
+
+.column3 {
+  -ms-flex: 33%; /* IE10 */
+  flex: 33%;
+  max-width: 33%;
+  /* padding: 0 4px; */
+  padding-left: 18px;
+  padding-right: 18px;
+  box-sizing: border-box;
+}
+
+.column3 img {
+  /* margin-top: 8px; */
+  vertical-align: middle;
+  width: 100%;
+}
+
+.column3Center
+{
+	padding: 0px 40px; box-sizing: border-box;
+	font-size: 20px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 1000px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+  
+    .column3 {
+    -ms-flex: 33%;
+    flex: 33%;
+    max-width: 33%;
+  }
+  .column3Center
+{
+	padding: 0px 10px;
+	font-size: 15px;
+}
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+  
+  .column3 {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+    .column3Center
+{
+	padding: 0px 0px;
+	font-size: 15px;
+	width: 60vw !important;
+}
+}
+}
+
+/*---------------------------------------------------------------------------------------------*/
+
+body
+{
+	overflow: auto;
+	overflow-x: hidden;
+}
+
+.websiteContainer
+{
+	position: static;
+	height: auto !important;
+	padding-top: 103px !important;
+	
+}
+
+.scrollContainer
+{
+	
+}
+
+.wycenaZdjecie
+{
+	position: relative;
+	width: 100%;
+	height: 300px;
+	background-position: center;
+	background-image: url(kontakt.jpg);
+	background-repeat:no-repeat;
+    background-size:cover;
+	border-bottom: 0.5px solid #baa256;
+}
+
+.wycenaZdejcieNapis
+{
+	margin: 0;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	font-family: myFirstFont;
+	font-size: 180px;
+	color: #fff;
+}
+
+.poczatkoweInformacje
+{
+	padding-top: 35px;
+	padding-bottom: 35px;
+	padding-left: 20%;
+	padding-right: 20%;
+	font-size: 20px;
+	line-height: 155%;
+	letter-spacing: 0.5px;
+	text-align: center;
+	border-bottom: 0.5px solid #baa256;
+	background-color:#312b27;
+}
+
+.formularzWycenaContainer
+{
+	 font-family: "freight-text-pro", Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
+	 height: auto;
+	font-size: 17px;
+	line-height: 155%;
+	letter-spacing: 0.5px;
+	text-align: center;
+	
+}
+
+
+
+.nazwaKategorii
+{
+	position: relative;
+	 padding-top: 30px;
+	padding-bottom: 30px;
+	font-size: 22px;
+	/*-webkit-filter: grayscale(100%); 
+  filter: grayscale(100%);
+  background-position: center;
+	background-image: url(drewno_tekstura.jpg);
+	background-repeat:no-repeat;
+    background-size:cover;*/
+	color: #eae2c5;
+	background-color: #201d1a;
+}
+
+.miejsceNaWybor
+{
+	position: relative;
+	width: 100%;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	border-bottom: 0.5px solid #baa256;
+	background-color:#312b27;
+	border-top: 0.5px solid #baa256;
+}
+
+.ciemneTlo
+{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #201d1a;
+	opacity: 0.77;
+}
+
+.kategoriaNapis
+{
+	position: absolute;
+	z-index: 35;
+	margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	color: #eae2c5;
+}
+
+
+/*--------------------------------------FORMULARZ-----------------------------------------*/
+
+fieldset
+{
+	border: none;
+	padding: 0px;
+}
+
+/* HIDE RADIO */
+[type=radio] { 
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;  
+	
+} 
+
+
+/* IMAGE STYLES */
+[type=radio] + img {
+  cursor: pointer;
+  /* width: 20%; */
+  padding: 0px;
+  margin-top: 12px;
+  box-sizing: border-box;
+  /* padding-left: 18px;
+  padding-right: 18px; */
+  transition: all 1s cubic-bezier(0.9, 0, 0.1, 1);
+  -webkit-transform: all 1s cubic-bezier(0.9, 0, 0.1, 1);
+  max-height: 500px;
+  height: auto;
+/*   -webkit-box-shadow: -3px 3px 30px -5px rgba(0, 0, 0, 1);
+-moz-box-shadow: -3px 3px 30px -5px rgba(0, 0, 0, 1);
+box-shadow: -3px 3px 30px -5px rgba(0, 0, 0, 1); */
+
+}
+
+/* CHECKED STYLES */
+[type=radio]:checked + img {
+/*   outline: 2px solid #baa256; */
+border: 25px solid transparent;
+  border-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='75' height='75'%3E%3Cg fill='none' stroke='%23B88846' stroke-width='2'%3E%3Cpath d='M1 1h73v73H1z'/%3E%3Cpath d='M8 8h59v59H8z'/%3E%3Cpath d='M8 8h16v16H8zM51 8h16v16H51zM51 51h16v16H51zM8 51h16v16H8z'/%3E%3C/g%3E%3Cg fill='%23B88846'%3E%3Ccircle cx='16' cy='16' r='2'/%3E%3Ccircle cx='59' cy='16' r='2'/%3E%3Ccircle cx='59' cy='59' r='2'/%3E%3Ccircle cx='16' cy='59' r='2'/%3E%3C/g%3E%3C/svg%3E") 25;
+}
+
+[type=radio]:not(:checked) + img {
+/*   outline: 2px solid #baa256; */
+border: 25px solid transparent;
+  border-image: none;
+  }
+
+.wycenaFormularzContainer label
+{
+	margin-top: 10px !important;
+	margin-left: 40px;
+	padding: 0 !important;
+	color: #eae2c5;
+}
+
+.wycenaFormularzDane
+{
+	float: left;
+	width: 50%;
+}
+
+.wycenaFormularzDane label
+{
+	width: 100%;
+	text-align: left;
+	
+}
+
+.wycenaFormularzKomentarz
+{
+	float: left;
+	width: 50%;
+}
+
+.wycenaFormularzKomentarz label
+{
+	text-align: left;
+}
+
+.wycenaFormularzContainer input[type=text] {
+	
+}
+
+.wycenaFormularzContainer input[type=email] {
+	
+}
+
+.wycenaFormularzContainer textarea {
+	
+	height: 195px;
+	
+}
+
+.wycenaFormularzDoPrawej
+{
+	float: right;
+}
+
+.wycenaFormularzDoLewej
+{
+	float: left;
+}
+
+input[type='radio']:hover +img {
+border: 25px solid transparent;
+  border-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='75' height='75'%3E%3Cg fill='none' stroke='%23B88846' stroke-width='2'%3E%3Cpath d='M1 1h73v73H1z'/%3E%3Cpath d='M8 8h59v59H8z'/%3E%3Cpath d='M8 8h16v16H8zM51 8h16v16H51zM51 51h16v16H51zM8 51h16v16H8z'/%3E%3C/g%3E%3Cg fill='%23B88846'%3E%3Ccircle cx='16' cy='16' r='2'/%3E%3Ccircle cx='59' cy='16' r='2'/%3E%3Ccircle cx='59' cy='59' r='2'/%3E%3Ccircle cx='16' cy='59' r='2'/%3E%3C/g%3E%3C/svg%3E") 25;
+
+  
+}
+
+.radioLabel
+{
+	cursor: pointer;
+	padding-top: 3px;
+	font-size: 18px;
+}
+
+.radioCenter
+{
+	display: inline-block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	/* color: #baa256; */
+}
+
+.wycenaFormularzContainer label
+{
+	/* color: #eae2c5; */
+}
+
+.column3Center
+{
+	display: inline-block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+
+/*----------------------------------------------------------------------------------*/
+
+.informacjeBetonContainer
+{
+	display: inline-block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+}
+
+
+.miejsceNaWybor table input
+{
+	padding: 5px;
+	margin: 3px;
+	height: 100%;
+	width: 70%;
+	background-color: #312827 !important;
+	text-align: right;
+}
+
+.miejsceNaWybor table th {
+  text-align: center;
+  padding: 6px;
+  font-size: 20px;
+}
+
+.miejsceNaWybor table, th, td {
+  border:1px solid #baa256;
+  background-color: #201d1a;
+}
+
+.miejsceNaWybor table td {
+  padding: 6px;
+  font-size: 18px;
+}
+
+.miejsceNaWybor table td:nth-child(2) {
+  width: 190px;
+}
+
+.miejsceNaWybor table td:nth-child(1) {
+  /* width: 30vw; */
+  padding-left: 10px;
+  padding-right: 10px;
+  /* max-width: 800px; */
+}
+
+.jednostkaInput
+{
+	padding-left: 10px;
+	box-sizing: border-box;
+}
+
+.input2Wymiary
+{
+	width: 24% !important;
+}
+
+.inneDivForInput
+{
+	position: relative;
+	width: 70% !important;
+	top: -50%;
+	left: 50%;
+	height: 40px;
+	background-color: black;
+	transform: translate(-50%, -50%);
+	box-sizing: border-box;
+}
+
+.inputInne
+{
+	padding: 0 !important;
+	margin: 0 !important;
+	width: 100% !important;
+	height: 100% !important;
+	font-size: 25px;
+	text-align: center !important; 
+	padding: 10px;
+}
+
+.inputWymiaryABC
+{
+	padding: 0 !important;
+	margin: 0 !important;
+	width: 30% !important;
+	height: 30px !important;
+	font-size: 25px;
+	text-align: right !important; 
+	padding: 10px;
+}
+
+.inputWymiaryABCContainer
+{
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 8px;
+}
+
+.radioTable
+{
+	text-align: center;
+	
+}
+
+.radioTable td 
+{
+	cursor: pointer;
+	font-size: 20px;
+	padding: 10px !important;
+}
+
+.radioTable td label
+{
+	cursor: pointer;
+	font-size: 20px;
+	
+}
+
+.radioTable tr
+{
+	
+}
+
+.radioTable span
+{
+	padding: 5px !important;
+	width: 100%;
+	box-sizing: border-box;
+	border: 2px solid #201d1a;
+	background-color: #201d1a;
+}
+
+
+
+/* CHECKED STYLES */
+/* .radioTable input[type=radio]:checked + span {
+border: 2px solid #baa256;
+background-color: #baa256;
+color: #201d1a;
+}
+
+.radioTable input[type='radio']:hover + span {
+border: 2px solid #baa256;
+background-color: #baa256;
+color: #201d1a; 
+} */
+
+.inputRadioTable
+{
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+}
+
+.inneInputDivContainer
+{
+	position: relative;
+	width: 70% !important;
+	
+	left: 50%;
+	transform: translate(-50%, 0%);
+	box-sizing: border-box;
+}
+
+
+/* HIDE RADIO */
+.radioTable [type=radio] { 
+  position: relative;
+  opacity: 1;
+  width: 15px;
+  height: 15px;  
+	border-radius: 0;
+} 
+
+/*-------------------------------------WYCENY CONTAINER-----------------------------------------*/
+.wycenaSamonosne
+{
+	opacity: 0;
+	visibility: hidden;
+	display: none;
+	/* transition: opacity 1s cubic-bezier(0.9, 0, 0.1, 1);
+	-webkit-transform: opacity 1s cubic-bezier(0.9, 0, 0.1, 1); */
+}
+
+.wycenaSchodyNaBeton
+{
+	opacity: 0;
+	visibility: hidden;
+	display: none;
+	/* transition: opacity 1s cubic-bezier(0.9, 0, 0.1, 1);
+	-webkit-transform: opacity 1s cubic-bezier(0.9, 0, 0.1, 1); */
+}
+
+.wycenaInne
+{
+	opacity: 0;
+	visibility: hidden;
+	display: none;
+	/* transition: opacity 1s cubic-bezier(0.9, 0, 0.1, 1);
+	-webkit-transform: opacity 1s cubic-bezier(0.9, 0, 0.1, 1); */
+}
+
+.showWycenaFormularz
+{
+	opacity: 1;
+	visibility: visible;
+	display: block;
+}
+
+.hideElement
+{
+	opacity: 0;
+	visibility: hidden;
+	display: none;
+}
+
+/*--------------------------------------------MEDIA------------------------------------------*/
+@media screen and (max-width:600px){
+  .poczatkoweInformacje {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width:601px) {
+  .poczatkoweInformacje {
+    font-size: 20px;
+  }
+}
+
+

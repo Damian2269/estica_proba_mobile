@@ -733,16 +733,13 @@ color: #201d1a;
 }
 
 /*--------------------------------------------MEDIA------------------------------------------*/
-@media screen and (max-width:600px){
+@media screen and (orientation:portrait){
   .poczatkoweInformacje {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 
-@media screen and (min-width:601px) {
-  .poczatkoweInformacje {
-    font-size: 20px;
-  }
+
 }
 
 

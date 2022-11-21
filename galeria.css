@@ -112,9 +112,9 @@
 /*-----------------------------------------------MEDIA--------------------------------------*/
 @media screen and (orientation:portrait) {
   .galeryOption {
-    width: calc(50% - 4px);
-	height: 50%;
-	border: 2px solid #baa256;
+    width: calc(50% - 2px);
+	height: calc((100vh - 103px) / 2);
+	border: none;
   }
   
   .zdjeciePrzyciemnienieGaleria
@@ -128,7 +128,26 @@
 		
 	border: 2px solid #baa256;
   }
+  
+  .galeryOption:nth-child(1) {
+  border-right: 1px solid #baa256;
+  border-bottom: 1px solid #baa256;
 }
+  .galeryOption:nth-child(2) {
+  border-left: 1px solid #baa256;
+  border-bottom: 1px solid #baa256;
+}
+  .galeryOption:nth-child(3) {
+  border-top: 1px solid #baa256;
+  border-right: 1px solid #baa256;
+}
+  .galeryOption:nth-child(4) {
+  border-top: 1px solid #baa256;
+  border-left: 1px solid #baa256;
+}
+}
+
+
 
 /* @media screen and (min-width:601px) {
   .poczatkoweInformacje {

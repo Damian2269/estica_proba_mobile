@@ -404,15 +404,22 @@
 
 /*-------------------------------------------MEDIA------------------------------------------------*/
 @media screen and (orientation:portrait) {
+	.websiteContainer{
+		height: auto;
+	}
+	.firmContent
+	{
+		height: auto;
+	}
   .firmImage {
     width: 100%;
-	height: calc(50% - 4px);
+	height: 75vw;
 	border-bottom: 4px solid #baa256;
   }
   
   .firmaInformacjeTlo {
     width: 100%;
-	height: calc(50% - 4px);
+	height: 40vh;
 	bolder-border-bottom: 4px solid #baa256;
   }
   
@@ -424,7 +431,7 @@
   .firmaNaglowek
   {
 	  position: absolute;
-	  top: 60%;
+	  top: 58%;
 	  left: 48%;
 	  transform: translate(-50%, -50%);
   }
@@ -432,7 +439,7 @@
     .firmaTekst
   {
 	  position: absolute;
-	  top: 68%;
+	  top: 67%;
 	  left: 50%;
 	  transform: translate(-50%, -50%);
 	  font-size: 40px;
@@ -461,35 +468,35 @@
   
     .firmImage2_1 {
     width: 100%;
-	height: calc(33.33% - 4px);
+	height: 150vw;
 	border-bottom: 4px solid #baa256;
-	background-position: 0% 85%;
+	/* background-position: 0% 85%; */
   }
       .firmImage2_2 {
     width: 100%;
-	height: calc(33.33% - 4px);
+	height: 134vw;
 	border-bottom: 4px solid #baa256;
   }
   
   .firmaInformacjeTlo2
   {
 	  width: 100%;
-	height: calc(33.33% - 4px);
+	height: 40vh;
 	border-bottom: 4px solid #baa256;
   }
   
   #naglowek2
   {
 	  position: absolute;
-	  top: 37%;
-	  left: 50%;
+	  top: 44%;
+	  left: 48%;
 	  transform: translate(-50%, -50%);
 	  font-size: 12em;
   }
   #tekst2
   {
 	  position: absolute;
-	  top: 46%;
+	  top: 50%;
 	  left: 50%;
   }
   
@@ -504,36 +511,29 @@
   
   .firmImage3 {
     width: 100%;
-	height: calc(33.33% - 4px);
+	height: 75vw;
 	border-bottom: 4px solid #baa256;
 	background-position: 0% 85%;
   }
       .firmImage3_3 {
     width: 100%;
-	height: calc(33.33% - 4px);
+	height: 133vw;
 	border-bottom: 4px solid #baa256;
 	background-position: 0% 70%;
-  }
-  
-  .firmaInformacjeTlo2
-  {
-	  width: 100%;
-	height: calc(33.33% - 4px);
-	border-bottom: 4px solid #baa256;
   }
   
   #naglowek3
   {
 	  position: absolute;
-	  top: 37%;
-	  left: 50%;
+	  top: 31%;
+	  left: 48%;
 	  transform: translate(-50%, -50%);
 	  font-size: 12em;
   }
   #tekst3
   {
 	  position: absolute;
-	  top: 46%;
+	  top: 38%;
 	  left: 50%;
   }
   
@@ -548,6 +548,6 @@
   {
 	  overflow-y: auto !important;
 	  overflow-x: hidden;
-	  height: calc(100vh - 103px);
+	  /* height: calc(100vh - 103px); */
   }
 }

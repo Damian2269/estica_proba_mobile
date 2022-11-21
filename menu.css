@@ -662,6 +662,19 @@ a
 }
 
 
-@media screen and (orientation:portrait) {
-  orientation: landscape;
+.zadajPytanieTekst:first-child
+{
+	margin-top: 50px;
+}
+
+/*--------------------------------------------MEDIA------------------------------------------*/
+@media screen and (orientation:portrait){
+.zadajPytanieTekst:first-child
+{
+	margin-top: 160px;
+}
+
+.zamknijIkonaZadajPytanie{
+	margin-top: 100px;
+}
 }

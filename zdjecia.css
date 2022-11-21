@@ -111,7 +111,8 @@ width: auto;
 @media screen and (orientation:portrait) {
 	.scrolling-wrapper
 	{
-		overflow: auto;
+		overflow-y: auto !important;
+	  overflow-x: hidden;
 	}
 	
   .photoGallery {

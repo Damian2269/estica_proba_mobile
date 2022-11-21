@@ -397,6 +397,10 @@
 	background-color: #221a16;
 }*/
 
+.websiteContainer
+{
+	height: calc(3 * ( 100vh - 103px) );
+}
 
 /*-------------------------------------------MEDIA------------------------------------------------*/
 @media screen and (orientation:portrait) {
@@ -452,6 +456,7 @@
     .pointDownArrow
   {
 	  left: 50%;
+	  display: none;
   }
   
     .firmImage2_1 {
@@ -541,6 +546,8 @@
   }
   .websiteContainer
   {
-	  overflow: auto !important;
+	  overflow-y: auto !important;
+	  overflow-x: hidden;
+	  height: calc(100vh - 103px);
   }
 }

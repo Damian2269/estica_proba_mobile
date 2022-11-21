@@ -129,7 +129,7 @@
 			</div>
 			<div class="nazwaKategorii"><div class="ciemneTlo"></div><div class="kategoriaNapis">PRZEDMIOT WYCENY</div></div>
 			<div class="formularzWycenaContainer">
-			<div class="miejsceNaWybor">
+			<div class="miejsceNaWybor" style="border-bottom: 0px;">
 				<fieldset id="rodzaj_schodow">
 				<div class="column3Center">
 					<div class="row"> 
@@ -163,13 +163,16 @@
 			</div>
 			</div>
 			
+			<div class="miejsceNaWybor" style="height: 100px; width: 100%; border-top: 0px;" id="przerwaFormularzWycena">
+			</div>
+			
 			<!-- ------------------------------------------SCHODY NA BETON FORMULARZ------------------------------------ -->
 			<div class="formularzWycenaContainer wycenaSchodyNaBeton">
 				<form class="gform" method="POST" data-email="esticaemail@gmail.com" onsubmit="showWyslano()" 
 				action="https://script.google.com/macros/s/AKfycbxXUnYfYo4Az5INt_YmdgWeEG_all4WYOgOgzlaa64EjkEC4fXbiT7eSKOS--AxTkAEzQ/exec">
 					  
 					  <div class="nazwaKategorii"><div class="ciemneTlo"></div><div class="kategoriaNapis">GATUNEK DREWNA</div></div>
-					  <div class="miejsceNaWybor">
+					  <div class="miejsceNaWybor" style="padding-bottom: 0px;">
 						<fieldset id="material">
 							<div class="radioCenter">
 								<div class="row"> 
@@ -333,7 +336,7 @@
 								  <tr>
 									<th colspan="3">Rodzaj balustrady</th>
 								  </tr>
-								  <fieldset id="Rodzaj balustrady">
+								  <fieldset id="rodzaj_balustrady">
 									  <tr class="radioTable">
 										<td style="width: 33.33%;">
 											<label for="drewniana_balustrada" style="cursor: pointer; width: 100%;">
@@ -495,7 +498,7 @@
 					  </div>
 					  
 					  <div class="nazwaKategorii"><div class="ciemneTlo"></div><div class="kategoriaNapis">KSZTAŁT I WYMIAR OTOWRU STROPOWEGO</div></div>
-					  <div class="miejsceNaWybor">
+					  <div class="miejsceNaWybor" style="padding-bottom: 35px;">
 						<fieldset id="ksztalt_i_wymiar_otworu_stropowego">
 							<div class="column3Center">
 								<div class="row"> 
@@ -549,7 +552,149 @@
 							</div>
 						</fieldset>
 					  </div>
-						
+					
+					<div class="nazwaKategorii"><div class="ciemneTlo"></div><div class="kategoriaNapis">GATUNEK DREWNA</div></div>
+					  <div class="miejsceNaWybor" style="padding-bottom: 0px;">
+						<fieldset id="material_samonosne">
+							<div class="radioCenter">
+								<div class="row"> 
+								  <div class="column">
+									<label for="dab_samonosne">
+										<input type="radio" value="dab_samonosne" name="material_samonosne" id="dab_samonosne" required>
+										<img src="index_zdjecia_3_3.jpg" style="width:100%;">
+										<div class="radioLabel">Dąb</div>
+									</label>
+								  </div>
+								  <div class="column">
+									<label for="jesion_samonosne">
+										<input type="radio" value="jesion_samonosne" name="material_samonosne" id="jesion_samonosne" required>
+										<img src="index_zdjecia_3_3.jpg" style="width:100%;">
+										<div class="radioLabel">Jesion</div>
+									</label>
+								  </div>
+								  <div class="column">
+									<label for="buk_samonosne">
+										<input type="radio" value="buk_samonosne" name="material_samonosne" id="buk_samonosne" required>
+										<img src="index_zdjecia_3_3.jpg" style="width:100%;">
+										<div class="radioLabel">Buk</div>
+									</label>
+								  </div>
+								  <div class="column">
+									<label for="inny_material_samonosne">
+										<input type="radio" value="inny_material_samonosne" name="material_samonosne" id="inny_material_samonosne" required>
+										
+										<img src="index_zdjecia_3_3.jpg" style="width:100%;">
+										
+									
+										<div class="radioLabel">Inny</div>
+									</label>
+									
+									<div class="inneDivForInput" onclick="inneRadioChecked('inny_material')">
+										<input class="inputInne" type="text" id="inny_material_nazwa" name="inny_material_nazwa"></input>
+									</div>
+								  </div>
+								</div>
+							</div>	
+						</fieldset>
+					  </div>
+
+					<div class="nazwaKategorii"><div class="ciemneTlo"></div><div class="kategoriaNapis">BALUSTRADA</div></div>
+					  <div class="miejsceNaWybor">
+						<fieldset id="balustrada_samonosne" style="padding-top: 25px; padding-bottom: 20px;">
+							<div class="informacjeBetonContainer">
+								<table style="width: 50vw; width: calc(42vw+200px);">
+								  <tr>
+									<th colspan="2">Balustrada</th>
+								  </tr>
+								  <fieldset id="balustrada_tak_nie_samonosne">
+									  <tr class="radioTable">
+										<td style="width: 50%;">
+											<label for="balustrada_tak_samonosne" style="cursor: pointer; width: 100%;" onclick="showBalustradaDiv2()">
+												<input class="inputRadioTable" type="radio" value="balustrada_tak_samonosne" name="balustrada_tak_nie_samonosne" id="balustrada_tak_samonosne" required>
+												<span>tak</span>
+											</label>
+										</td>
+										<td style="width: 50%;">
+											<label for="balustrada_nie_samonosne" style="cursor: pointer; width: 100%;" onclick="hideBalustradaDiv2()">
+												<input class="inputRadioTable" type="radio" value="balustrada_nie_samonosne" name="balustrada_tak_nie_samonosne" id="balustrada_nie_samonosne" required>
+												<span>nie</span>
+											</label>
+										</td>
+									  </tr>
+								  </fieldset>
+								</table>
+								<div class="hideElement" id="balustradaDivSamonosne">
+									<table style="width: 50vw; width: calc(45vw+200px); margin-top: 25px;">
+								  <tr>
+									<th colspan="3">Rodzaj balustrady</th>
+								  </tr>
+								  <fieldset id="rodzaj_balustrady_samonosne">
+									  <tr class="radioTable">
+										<td style="width: 33.33%;">
+											<label for="drewniana_balustrada_samonosne" style="cursor: pointer; width: 100%;">
+												<input class="inputRadioTable" type="radio" value="drewniana_balustrada_samonosne" name="rodzaj_balustrady_samonosne" id="drewniana_balustrada_samonosne">
+												<span>drewniana</span>
+											</label>
+										</td>
+										<td style="width: 33.33%;">
+											<label for="szklana_balustrada_samonosne" style="cursor: pointer; width: 100%;">
+												<input class="inputRadioTable" type="radio" value="szklana_balustrada_samonosne" name="rodzaj_balustrady_samonosne" id="szklana_balustrada_samonosne">
+												<span>szklana balustrada</span>
+											</label>
+										</td>
+										<td style="width: 33.33%;">
+											<label for="ze_stali_nierdzewnej_balustrada_samonosne" style="cursor: pointer; width: 100%;">
+												<input class="inputRadioTable" type="radio" value="ze_stali_nierdzewnej_balustrada_samonosne" name="rodzaj_balustrady_samonosne" id="ze_stali_nierdzewnej_balustrada_samonosne">
+												<span>ze stali nierdzewnej</span>
+											</label>
+										</td>
+										
+									  </tr>
+									  
+									  <tr class="radioTable">
+										<td style="width: 33.33%;">
+											<label for="stalowa_malowana_balustrada_samonosne" style="cursor: pointer; width: 100%;">
+												<input class="inputRadioTable" type="radio" value="stalowa_malowana_balustrada_samonosne" name="rodzaj_balustrady_samonosne" id="stalowa_malowana_balustrada_samonosne">
+												<span>stalowa malowana</span>
+											</label>
+										</td>
+										<td style="width: 33.33%;">
+											<label for="metaloplastyka_balustrada_samonosne" style="cursor: pointer; width: 100%;">
+												<input class="inputRadioTable" type="radio" value="metaloplastyka_balustrada_samonosne" name="rodzaj_balustrady_samonosne" id="metaloplastyka_balustrada_samonosne">
+												<span>metaloplastyka</span>
+											</label>
+										</td>
+										<td style="width: 33.33%;">
+											<label for="inne_balustrada_samonosne" style="cursor: pointer; width: 100%;">
+												<input class="inputRadioTable" type="radio" value="inne_balustrada_samonosne" name="rodzaj_balustrady_samonosne" id="inne_balustrada_samonosne">
+												<span>inna</span>
+											</label>
+											<div class="inneInputDivContainer" onclick="inneRadioChecked('inne_balustrada')">
+												<input class="inputInne" type="text" id="inne_balustrada_nazwa_samonosne" name="inne_balustrada_nazwa_samonosne"></input>
+											</div>
+										</td>
+									  </tr>
+								  </fieldset>
+								</table>
+								<table style="width: 50vw; width: calc(42vw+200px); margin-top: 25px;">
+								  <tr>
+									<th>Opis</th>
+									<th>Wymiar</th>
+								  </tr>
+								  <tr>
+									<td>łączna ilość balustrady wzdłuż biegów schodów i balustrady na pietrze</td>
+									<td>
+										<input type="text" id="laczna_ilosc_balustrad" name="laczna_ilosc_balustrad"><span class="jednostkaInput">cm</span>
+									</td>
+								  </tr>
+								</table>
+								</div>
+								
+							</div>
+						</fieldset>
+					  </div>
+
+					
 					  <div class="nazwaKategorii"><div class="ciemneTlo"></div><div class="kategoriaNapis">INFORMACJE</div></div>
 					  <div class="miejsceNaWybor">
 						<fieldset id="informacjeSamonosne" style="padding-top: 25px;">
